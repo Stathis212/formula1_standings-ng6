@@ -1,0 +1,119 @@
+@import '../assets/styles/variables';
+
+body {
+	margin: 0;
+	font-family: $font-primary, sans-serif;
+	background: linear-gradient(120deg, $lunar 50%, $deep 50%);
+}
+
+h1 {
+  font-size: 30px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-size: 25px;
+  color: #fff;
+  font-weight: 300;
+  text-align: center;
+}
+
+.table {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+  font-family: $font-primary;
+  font-size: 12px;
+  
+	&-head {
+    background-color: $table-bg-gray;
+
+		&-row {
+			display: flex;
+      flex-direction: row;
+      color: $white;
+      font-weight: 500;
+      text-transform: uppercase;
+
+    }
+    
+	}
+	
+	&-body {
+		overflow-y: scroll;
+    max-height: $table_body_height;
+    background-color: transparent;
+	}
+	
+	&-row {
+		display: flex;
+		flex-direction: row;
+    align-items: left;
+    font-weight: 300;
+    border-bottom: solid 1px $table-bg-gray;
+    color: $white;
+
+	}
+	
+	&-cell {
+		padding: 1em;
+		/*text-align: center;*/
+    flex: 1 1 33%;
+    &:first-child { text-align: center; }
+    &:last-child { text-align: center; }
+	}
+}
+
+.main {
+	overflow: hidden;
+	animation: Page 600ms ease-in-out forwards;
+	display: flex;
+	margin-top: 20px;
+	height: 100vh;
+	@media screen and (max-width: 900px) {
+		display: block;
+	}
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: $transblack; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $transblack;  
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $lunar; 
+}
+
+// Responsive Text Stuff
+:root {
+	font-size: 13px;
+}
+@media screen and (min-width: 1000px) {
+	:root {
+		font-size: 14px;
+	}
+}
+@media screen and (min-width: 1240px) {
+	:root {
+		font-size: 16px;
+	}
+}
+@media screen and (min-width: 1480px) {
+	:root {
+		font-size: 17px;
+	}
+}

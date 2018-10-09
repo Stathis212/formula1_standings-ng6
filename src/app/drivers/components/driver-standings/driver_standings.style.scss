@@ -1,0 +1,66 @@
+@import "../../../../assets/styles/variables";
+
+:host {
+  display: contents;
+  width: 100%;
+}
+
+.standings-container {
+  width: 100%;
+}
+
+.search-container {
+  width: 100%;
+  text-align: center;
+  padding-top:0px;
+  padding-bottom: 0px;
+}
+
+input {
+  line-height: normal;
+  transition: all ease-in-out .25s;
+  &:focus {
+    outline: none;
+    transform: scale(1.02);
+    // box-shadow: 0 -6px 30px 0 rgba(0,0,0,0.50);
+    -webkit-box-shadow: 0 10px 30px -20px #999;
+	   -moz-box-shadow: 0 10px 30px -20px #999;
+	        box-shadow: 0 10px 30px -20px #999;
+    transition: all ease-in-out .25s;
+  }
+  
+  &[type="search"] {
+    -webkit-appearance: textfield;
+    box-sizing: content-box;
+  }
+}
+
+.search-field {
+    background-image: url("https://s3-ap-southeast-2.amazonaws.com/energylink-desk.com/images/search.svg");
+    background-position-x: 1.2em;
+    background-position-y: 70%;
+    background-size: 0.8em;
+    background-repeat: no-repeat;
+    background-color: rgba(236, 236, 236, 0.829);
+    color: $lunar;
+    border: 0;
+    // box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 5px 15px -8px rgba(0, 0, 0, 0.2);
+	   -moz-box-shadow: 0 5px 15px -8px rgba(0, 0, 0, 0.2);
+	        box-shadow: 0 5px 15px -8px rgba(0, 0, 0, 0.2);
+    font-size: 1em;
+    height: 1rem;
+    margin-top: -1em;
+    max-height: 2em;
+    padding: 1.4em 3em .4em;
+    text-align: left;
+    text-align-last: left;
+    width: 60%;
+    max-width: 200px;
+}
+
+.table-container {
+	width: 100%;
+	max-width: 50%;
+	margin: 2em auto;
+}

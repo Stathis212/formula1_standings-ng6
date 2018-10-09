@@ -1,0 +1,49 @@
+@import "../../../../assets/styles/variables";
+
+:host {
+  display: contents;
+}
+
+.back-button {
+	color: $lunar;
+}
+
+// Keyframes
+@keyframes Page {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes Bio {
+	0% {
+		transform: translateX(-50vw);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
+
+@keyframes Contact {
+	0% {
+		transform: translateX(50vw);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
+
+@keyframes swell {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.1);
+	}
+	100% {
+		transform: scale(1);
+	}
+}

@@ -1,0 +1,5 @@
+app-header(*ngIf='!(loading$ | async)', [title]='"Back"')
+.main
+  app-preloader(*ngIf='loading$ | async')
+  app-drivers-driver-profile(*ngIf='!(loading$ | async)', [profile]='(driver$ | async)?.Driver', [team]='(driver$ | async)?.Constructors[0]')
+  app-drivers-driver-results(*ngIf='!(loading$ | async)', [results]='(results$ | async)?.Races')

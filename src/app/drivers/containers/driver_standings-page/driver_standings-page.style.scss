@@ -1,0 +1,11 @@
+@import "../../../../assets/styles/variables";
+
+:host {
+  display: contents;
+}
+
+.title-round {
+  h2 {
+    margin-bottom: 50px;
+  }
+}

@@ -1,0 +1,8 @@
+app-header(*ngIf='!(loading$ | async)', [title]='"Driver Championship Standings " + (season$ | async)')
+app-preloader(*ngIf='loading$ | async')
+.title-round
+  h2
+    | Round {{round$ | async}}
+.main
+  app-drivers-driver-standings(*ngIf='!(loading$ | async)', [drivers]="drivers$ | async")
+app-footer

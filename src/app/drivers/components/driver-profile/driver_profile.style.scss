@@ -1,0 +1,48 @@
+@import "../../../../assets/styles/variables";
+
+:host {
+  display: contents;
+}
+
+.bio {
+  width: 30%;
+  padding: 0 5%;
+  color: $white;
+
+  .profile-img {
+    max-width: 12em;
+    border-radius: 50%;
+  }
+  .bio-link {
+    @include capsfont(1rem);
+    display: inline-block;
+    // floats & clears to break lines
+    float: left;
+    clear: left;
+    text-decoration: none;
+    color: $white;
+    margin-bottom: 0.25em;
+    transition: color 300ms ease-in-out;
+    i {
+      margin-left: 8px;
+    }
+    &::after {
+      display: block;
+      content: '';
+      height: 1px;
+      width: 0;
+      background: $rust;
+      transition: width 300ms ease-in-out;
+    }
+    &:hover::after {
+      width: 100%;
+    }
+    &:hover {
+      color: $rust;
+    }
+  }
+}
+
+.bio {
+	animation: Bio 600ms ease-in-out forwards;
+}

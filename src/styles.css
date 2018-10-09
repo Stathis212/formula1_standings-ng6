@@ -1,0 +1,55 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Helper Classes */
+
+.fs-20 {
+  font-size: 20px;
+}
+
+.fs-25 {
+  font-size: 25px;
+}
+
+.pt-10 {
+  padding-top: 10px;
+}
+
+.pl-10 {
+  padding-left: 10px;
+}
+
+.pr-10 {
+  padding-right: 10px;
+}
+
+.pr-20 {
+  padding-right: 20px;
+}
+
+.pr-30 {
+  padding-right: 30px;
+}
+
+.pb-10 {
+  padding-bottom: 10px;
+}
+
+.m-auto {
+  margin: auto;
+}
+
+.fleft{
+  float: left;
+}
+
+.fright {
+  float: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.pointer {
+  cursor: pointer;
+}

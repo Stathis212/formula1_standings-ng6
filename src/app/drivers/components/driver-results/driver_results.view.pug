@@ -1,0 +1,27 @@
+.results
+  .table-container
+    .table(*ngIf='results')
+      .table-head
+        .table-head-row
+          .table-cell((click)="sort('round')") 
+            .pointer Round
+          .table-cell((click)="sort('raceName')") 
+            .pointer Grand Prix
+          .table-cell((click)="sort('constructorName')") 
+            .pointer Team
+          .table-cell((click)="sort('grid')") 
+            .pointer Grid
+          .table-cell((click)="sort('number')") 
+            .pointer Race
+      .table-body
+        .table-row(*ngFor='let result of results | orderBy:sortingName:isDesc')
+          .table-cell 
+            span.pointer {{result.round}}
+          .table-cell
+            span.pointer {{result.raceName}}
+          .table-cell
+            span.pointer {{result.constructorName}}
+          .table-cell
+            span.pointer {{result.grid}}
+          .table-cell
+            span.pointer {{result.number}}

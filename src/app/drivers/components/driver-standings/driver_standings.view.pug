@@ -1,0 +1,25 @@
+.standings-container
+  .search-container
+    input#search.search-field((keyup)="onKey($event)", placeholder="Search Driver", type="text")
+  .table-container
+    .table(*ngIf='drivers')
+      .table-head
+        .table-head-row
+          .table-cell 
+            .pointer Index
+          .table-cell((click)="sort('fullName')")
+            .pointer Driver
+          .table-cell((click)="sort('constructorName')")
+            .pointer Constructor
+          .table-cell((click)="sort('wins')")
+            .pointer Wins
+      .table-body
+        .table-row(*ngFor='let driver of drivers | searchByName: searchText | orderBy:sortingName:isDesc; let i = index')
+          .table-cell 
+            | {{i+1}}
+          .table-cell((click)='selectDriver(driver.Driver.driverId)')
+            span.pointer {{driver.fullName}}
+          .table-cell
+            span.pointer {{driver.constructorName}}
+          .table-cell
+            | {{driver.wins}}

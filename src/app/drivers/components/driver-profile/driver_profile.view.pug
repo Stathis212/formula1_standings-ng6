@@ -1,0 +1,26 @@
+.bio(*ngIf='profile')
+  .text-center
+    img(src="https://www.formula1.com/content/fom-website/en/drivers/{{ removeAccents((profile.givenName | lowercase) + '-' + (profile.familyName | lowercase)) }}/_jcr_content/image.img.1920.medium.jpg" class="profile-img")
+    h3.header {{profile.givenName + ' ' + profile.familyName}}
+  table 
+    tr
+      td.pt-10.pr-10
+        strong Nationality: 
+      td.pt-10
+        span {{profile.nationality}}
+    tr
+      td.pt-10.pr-10
+        strong Team: 
+      td.pt-10
+        span {{team.name}}
+    tr
+      td.pt-10.pr-10
+        strong Date of Birth: 
+      td.pt-10
+        span {{profile.dateOfBirth}}
+    tr
+      td.pt-10.pr-10
+        strong Biography: 
+      td.pt-10
+        a(href='{{profile.url}}', target='_blank') 
+          img.pointer(src='https://png.icons8.com/ios/15/ffffff/external-link.png')
