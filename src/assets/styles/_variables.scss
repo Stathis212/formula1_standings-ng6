@@ -1,5 +1,21 @@
+// Font
 $font-primary: 'Roboto', sans-serif;
-$breakpoint-alpha: 480px;
+
+// Colors
+$rust: #CA8D6E;
+$lunar: #383745;
+$deep: #22202B;
+$white: #EEEEEE;
+$mud: #7D6962;
+$transblack: rgba(0, 0, 0, 0.3);
+
+// Media Breakpoints
+$breakpoint_alpha: 480px;
+$breakpoint_tablet_portrait: 600px;
+$breakpoint_tablet_landscape: 900px;
+$breakpoint_desktop: 1200px;
+
+// Various
 $table-bg-gray: rgba(255,255,255,0.3);
 $table_width: 100%;
 $table_body_height: 400px;
@@ -9,11 +25,3 @@ $table_body_height: 400px;
 	letter-spacing: 3px;
 	font-size: $size;
 }
-
-// Colours!
-$rust: #CA8D6E;
-$lunar: #383745;
-$deep: #22202B;
-$white: #EEEEEE;
-$mud: #7D6962;
-$transblack: rgba(0, 0, 0, 0.3);

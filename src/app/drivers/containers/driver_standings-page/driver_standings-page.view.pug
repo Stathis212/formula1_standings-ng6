@@ -1,6 +1,6 @@
-app-header(*ngIf='!(loading$ | async)', [title]='"Driver Championship Standings " + (season$ | async)')
 app-preloader(*ngIf='loading$ | async')
-.title-round
+app-header(*ngIf='!(loading$ | async)', [title]='"Driver Championship Standings " + (season$ | async)')
+.title-round(*ngIf='!(loading$ | async)')
   h2
     | Round {{round$ | async}}
 .main

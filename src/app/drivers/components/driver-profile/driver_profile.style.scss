@@ -8,6 +8,7 @@
   width: 30%;
   padding: 0 5%;
   color: $white;
+  animation: Bio 600ms ease-in-out forwards;
 
   .profile-img {
     max-width: 12em;
@@ -41,8 +42,7 @@
       color: $rust;
     }
   }
-}
-
-.bio {
-	animation: Bio 600ms ease-in-out forwards;
+  @media (max-width: $breakpoint_tablet_landscape) { 
+    width: 90%;
+  }
 }

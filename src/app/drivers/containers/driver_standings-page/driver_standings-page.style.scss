@@ -7,5 +7,8 @@
 .title-round {
   h2 {
     margin-bottom: 50px;
+    @media (max-width: $breakpoint_tablet_portrait) { 
+      margin-top: 130px;
+    }
   }
 }

@@ -62,5 +62,9 @@ input {
 .table-container {
 	width: 100%;
 	max-width: 50%;
-	margin: 2em auto;
+  margin: 2em auto;
+  @media (max-width: $breakpoint_tablet_landscape) { 
+    max-width: 90%;
+    margin-left: 5%;
+  }
 }
