@@ -1,5 +1,5 @@
 import { DriverStandingsActionsUnion, DriverStandingsActionTypes } from '../actions/driverStandings.actions';
-import { DriverStandingsResponseModel, DriverStanding } from '../../_models/driverStandings.model';
+import { DriverStanding } from '../../_models/driverStandings.model';
 import { EntityState, EntityAdapter, createEntityAdapter } from '@ngrx/entity';
 import { createFeatureSelector, createSelector } from '@ngrx/store';
 

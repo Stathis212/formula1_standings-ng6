@@ -1,6 +1,6 @@
 import { DriverResultsActionsUnion, DriverResultsActionTypes } from '../actions/driverResults.actions';
-import { createFeatureSelector, createSelector } from '@ngrx/store';
-import { DriverResultsResponseModel, RaceTable } from '../../_models/driverResults.model';
+import { createFeatureSelector } from '@ngrx/store';
+import { RaceTable } from '../../_models/driverResults.model';
 
 export interface State {
   loading: boolean;
