@@ -6,7 +6,7 @@ import {
   RouterStateSerializer,
 } from '@ngrx/router-store';
 
-import { reducers } from './reducers';
+import { reducers } from './_core/store/reducers';
 import { environment } from '../environments/environment';
 
 export const AppState = [

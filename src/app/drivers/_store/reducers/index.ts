@@ -5,7 +5,7 @@ import {
 } from '@ngrx/store';
 import * as fromStandings from './driverStandings.reducer';
 import * as fromResults from './driverResults.reducer';
-import * as fromRoot from '../../../reducers';
+import * as fromRoot from '../../../_core/store/reducers';
 
 export interface DriversState {
   standings: fromStandings.State;
